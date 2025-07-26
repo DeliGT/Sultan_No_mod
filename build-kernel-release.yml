@@ -1,4 +1,4 @@
-name: Build and Release Sultan Kernels
+iname: Build and Release Sultan Kernels
 
 permissions:
   contents: write  # Allow writing to repository contents (for pushing tags)
@@ -49,8 +49,8 @@ jobs:
         - build-kernel-zumapro
     if: ${{ inputs.make_release }}
     env:
-      REPO_OWNER: TheWildJames
-      REPO_NAME: Sultan_KernelSU_SUSFS
+      REPO_OWNER: DeliGT
+      REPO_NAME: Sultan_No_mod
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       RELEASE_NAME: "*TEST BUILD* Sultan Kernels With KernelSU Next & SUSFS v1.5.9 *TEST BUILD*"
       RELEASE_NOTES: |
